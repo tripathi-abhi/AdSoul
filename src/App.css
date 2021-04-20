@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+:root {
+	--primary-color: #7164ff;
+	--secondary-color: #6156dc;
+	--primary-color2: #f7f7f7;
+	--secondary-color2: #ffffff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* reset */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* font-size */
+.fa-2x {
+	font-size: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.fa-lg {
+	font-size: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.fa-small {
+	font-size: 0.8rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* font-weight */
+
+.fw-9 {
+	font-weight: 900;
+}
+
+.fw-7 {
+	font-weight: 700;
+}
+
+.fw-6 {
+	font-weight: 600;
+}
+
+.fw-5 {
+	font-weight: 500;
+}
+
+.fw-4 {
+	font-weight: 400;
+}
+
+/* other-text-styles */
+
+.text-dull {
+	color: #a9a9a9;
+}
+
+.text-nowrap {
+	white-space: nowrap;
+}
+
+/* styles */
+
+.navbar,
+.statsSection {
+	background-color: var(--primary-color);
+}
+
+.navbar {
+	height: 60px;
+}
+
+.navbar__brand {
+	font-size: 1em;
+	font-weight: 700;
+	letter-spacing: 5px;
+}
+
+.statsSection {
+	min-height: 300px;
+	height: 40vh;
+}
+
+.optimizationSection {
+	background-color: var(--secondary-color);
+	min-height: 350px;
+	height: calc(60vh - 60px);
+}
+
+.colorBox {
+	width: 60px;
+	height: 60px;
+	background-color: #6156dc;
+}
+
+.container__column,
+.container__dataTable {
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+		rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.column__apps {
+	display: grid;
+	grid-template-rows: min-content auto;
+	background-color: var(--primary-color2);
+}
+
+.column__adsList::-webkit-scrollbar {
+	width: 6px;
+}
+
+.column__adsList::-webkit-scrollbar-thumb {
+	background-color: #e8e8e8;
+	border-radius: 50px;
+}
+
+/* media and screen querries */
+
+@media only screen and (min-width: 992px) {
+	.column__apps {
+		height: 100vh;
+	}
+	.column__adsList {
+		overflow-y: scroll;
+	}
 }
