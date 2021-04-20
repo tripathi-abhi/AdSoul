@@ -98,7 +98,7 @@ const AdInfoPage = ({ location }) => {
 					<Link to="/" className="mr-4">
 						<AiOutlineArrowLeft className="h3 text-dull" />
 					</Link>
-					<div className="colorBox rounded" />
+					<div className="d-none d-sm-block colorBox rounded" />
 					<div className="ml-2">
 						<p className="m-0 fa-lg fw-5">{adData.appName}</p>
 						<p className="m-0 text-muted fa-small fw-5">
