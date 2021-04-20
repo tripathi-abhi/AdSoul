@@ -59,6 +59,9 @@
 }
 
 /* styles */
+.container__main {
+	overflow-y: hidden;
+}
 
 .navbar,
 .statsSection {

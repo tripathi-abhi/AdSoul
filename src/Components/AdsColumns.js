@@ -24,7 +24,7 @@ const AdsColumns = () => {
 	}, []);
 
 	return adsList.length ? (
-		<Container fluid className="column__adsList">
+		<Container fluid className="p-0 p-sm-2 column__adsList">
 			{adsList.map(adData => (
 				<ColumnComponent key={adData.id} adData={adData} />
 			))}

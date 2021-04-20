@@ -20,7 +20,7 @@ const ColumnComponent = ({ adData }) => {
 			className="mx-2 mx-lg-4 my-4 p-2 p-lg-4 rounded bg-white container__column"
 		>
 			<Container fluid className="d-flex align-items-start my-3">
-				<div className="colorBox rounded" />
+				<div className="d-none d-sm-block colorBox rounded" />
 				<div className="ml-2">
 					<p className="m-0 fa-lg fw-5">{adData.appName}</p>
 					<p className="m-0 text-muted fa-small fw-5">{adData.publisherName}</p>
@@ -32,7 +32,7 @@ const ColumnComponent = ({ adData }) => {
 					<AiOutlineArrowRight className="h3 text-dull" />
 				</Link>
 			</Container>
-			<Container fluid className="d-flex flex-wrap data__column">
+			<Container fluid className="d-flex flex-wrap m-0 data__column">
 				{dataList.map(data => _renderDiv(data.name, data.value))}
 			</Container>
 		</Row>

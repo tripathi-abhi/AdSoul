@@ -13,7 +13,7 @@ const HomePage = () => {
 					<NavbarComponent />
 					<AdsSection />
 				</Col>
-				<Col className="col-12 col-lg-6 column__apps text-black">
+				<Col className="col-12 col-lg-6 column__apps position-relative text-black">
 					<AdHeader />
 					<AdsColumns />
 				</Col>
