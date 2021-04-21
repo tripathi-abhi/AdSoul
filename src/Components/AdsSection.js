@@ -9,7 +9,7 @@ import DisplayIcon from "./DisplayIcon";
 
 const AdsSection = () => {
 	return (
-		<section className="p-0 m-0 text-white adsSection">
+		<section className="p-0 m-0 text-white appsSection">
 			<Container fluid className="p-4 text-center statsSection">
 				<img src={statsImage} alt="jumbo__image" />
 			</Container>
